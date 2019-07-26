@@ -8,11 +8,11 @@ class Wang_Yin_Blog(BasicNewsRecipe): # 继承 BasicNewsRecipe 类的新类名
     #///////////////////
     # 设置电子书元数据
     #///////////////////
-    title = 'nz tips' # 电子书名
-    description = 'nz tips for crazy' # 电子书简介
-    #cover_url = '' # 电子书封面
-    #masthead_url = '' # 页头图片
-    __author__ = 'some' # 作者
+    title = 'EOSsweden bihu notes' # 电子书名
+    description = 'A collection of articles' # 电子书简介
+    cover_url = 'http://www.sitexa.net/images/eos/dpos_bft_opt.jpg' # 电子书封面
+    masthead_url = 'https://eossweden.org/wp-content/uploads/2018/08/eden-txt-logo-wht.png' # 页头图片
+    __author__ = 'EOSsweden' # 作者
     language = 'zh' # 语言
     encoding = 'utf-8' # 编码
 
@@ -30,8 +30,8 @@ class Wang_Yin_Blog(BasicNewsRecipe): # 继承 BasicNewsRecipe 类的新类名
     # 页面内容解析方法
     #///////////////////
     def parse_index(self):
-        site = 'https://www.crazyguyonabike.com/doc/?o=1mr&doc_id=5873&v=6H' # 页面列表页
-        site2 = 'https://www.crazyguyonabike.com'
+        site = 'https://bihu.com/people/98843' # 页面列表页
+        site2 = 'https://bihu.com'
         soup = self.index_to_soup(site) # 解析列表页返回 BeautifulSoup 对象
         links = soup.findAll("dd") # 获取所有文章链接
         articles = [] # 定义空文章资源数组
