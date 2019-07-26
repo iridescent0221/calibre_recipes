@@ -57,7 +57,7 @@ class SaveArticle:
     
 class JianshuWeekly(BasicNewsRecipe):
 
-    INDEX = 'http://www.jianshu.com/top/weekly'
+    INDEX = 'http://www.jianshu.com'
     ARTICLE_INDEX = 'http://www.jianshu.com'
 
     title = u'简书每周热门'
